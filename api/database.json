@@ -1,0 +1,156 @@
+
+
+{
+    "computers": [
+        {
+            "id": 1,
+            "model": "Macbook Pro",
+            "year": 2015
+        },
+        {
+            "id": 2,
+            "model": "IBM Big Iron Mainframe",
+            "year": 1956
+        },
+        {
+            "id": 3,
+            "model": "Atari 2600",
+            "year": 1982
+        },
+        {
+            "id": 4,
+            "model": "Abacus",
+            "year": 1105
+        }
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "firstName": "Rainu",
+            "lastName": "Ittycheriah",
+            "age": 35,
+            "computerId": 1,
+            "departmentId": 3,
+            "locationId": 1
+
+        },
+
+        {
+            "id": 2,
+            "firstName": "Billy",
+            "lastName": "Kid",
+            "age": 160,
+            "computerId": 2,
+            "departmentId": 4,
+            "locationId": 2
+        },
+
+        {
+            "id": 3,
+            "firstName": "Lizzy",
+            "lastName": "Borden",
+            "age": 159,
+            "computerId": 4,
+            "departmentId": 4,
+            "locationId": 2
+        },
+
+        {
+            "id": 4,
+            "firstName": "Mark",
+            "lastName": "Twain",
+            "age": 124,
+            "computerId": 3,
+            "departmentId": 2,
+            "locationId": 3
+        }
+    ], 
+    "departments": [
+    {
+        "id": 1,
+        "deptName": "Accounting"
+    },
+    {
+        "id": 2,
+        "deptName": "Sales"
+    },
+    {
+        "id": 3,
+        "deptName": "Information Technology"
+    },
+    {
+        "id": 4,
+        "deptName": "Quality Assurance"
+    }
+
+    ],
+    "locations": [
+        {
+            "id": 1,
+            "location": "Nashville"
+        },
+        {
+            "id": 2,
+            "location": "Atlanta"
+        },
+        {
+            "id": 3,
+            "location": "Memphis"
+        }
+    
+        ],
+        "customers": [
+            {
+                "id": 1,
+                "businessName": "Bubba's Beer and Smoked Pig Inc"
+            },
+            {
+                "id": 2,
+                "businessName": "Pails & Money"
+            },
+            {
+                "id": 3,
+                "businessName": "Sell Stuff & Profit"
+            },
+            {
+                "id": 4,
+                "businessName": "Capitalism Boomtown"
+            },
+            {
+                "id": 5,
+                "businessName": "Socialism Liquidation Warehouse"
+            }
+        ],
+        "employeeCustomers": [
+            {
+                "id": 1,
+                "employeeId": 1,
+                "customerId": 1,
+                "rate": 60,
+                "contractLength": 180
+            },
+            {
+                "id": 2,
+                "employeeId": 3,
+                "customerId": 4,
+                "rate": 75,
+                "contractLength": 540
+            },
+            {
+                "id": 3,
+                "employeeId": 2,
+                "customerId": 5,
+                "rate": 110,
+                "contractLength": 195
+            },
+            {
+                "id": 4,
+                "employeeId": 5,
+                "customerId": 2,
+                "rate": 250,
+                "contractLength": 80
+            }
+        ]
+    }
+
+
