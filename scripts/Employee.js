@@ -32,21 +32,31 @@ const Employee = (type, employee, dept, office, customers, empRate) => {
    <br>
    
    </div>
-    <h2>Current Client Assignment  ...</h2>
+    <h2>Current Client Assignment(s)  ...</h2>
    <ol>
    
    ${
        customers.map(customer => {
-           return `<li>${customer.businessName} </li>`
+           return `<li>${customer.businessName} </li>
+           <br>
+           <div class="cust__manager">
+           - Hiring Manager is ${customer.hiringManager}
+           </div>
+           <br>
+           <div class="cust__rate">
+           - Hourly Bill Rate $${customer.rate}
+           </div>              
+           <br>
+           <div class="cust__contrLength">
+           - Contract Length in days ${customer.contractLength}
+           </div>
+           <br>
+         
+         
+            `
     }).join("")
     }
     </ol>
-
-
-    <div class="cust__rate">
-   
-    Bill Rate $${empRate}
-    <br>
            
      </div>
 

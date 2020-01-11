@@ -47,19 +47,29 @@ const office = locations.find(office => office.id === employee.locationId)
 const customerRelationships = empCust.filter(ec => ec.employeeId === employee.id)
 
 // For each relationship, find the company they work at
-const foundCustomersArray = customerRelationships.map(rc => {
-const foundCustomer = customers.find(customer => customer.id === rc.customerId)
+const foundCustomersArray = customerRelationships.map(crel => {
+const foundCustomer = customers.find(customer => customer.id === crel.customerId)
+// These are attaching the rate and contractLength to the foundCustomer array
+// and passing them thru to be used by employee.js
+foundCustomer.rate = crel.rate
+foundCustomer.contractLength = crel.contractLength
+foundCustomer.hiringManager = crel.hiringManager
 
+
+
+// debugger
 return foundCustomer
 })
-
+// const billRate = foundCustomersArray.rate
 // const foundEmployeeCustomersArray = customerRelationships.map(rc => {
 //     const foundEmployeeCustomer = customers.find(customer => customer.id === rc.customerId)
 //     return foundEmployeeCustomer
 //     })
 
 // Get HTML representation of product
-// debugger
+
+// debugger     
+
 // const html = Employee(type, employee, department)
 const html = Employee(type, employee, dept, office, foundCustomersArray)
 // const html = Employee(type, employee, dept, office, foundCustomersArray, foundEmployeeCustomersArray )

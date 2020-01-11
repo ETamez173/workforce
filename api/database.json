@@ -118,37 +118,41 @@
             },
             {
                 "id": 5,
-                "businessName": "Socialism Liquidation Warehouse"
+                "businessName": "Bernie's Socialism Liquidation Warehouse"
             }
         ],
         "employeeCustomers": [
             {
                 "id": 1,
                 "employeeId": 1,
-                "customerId": 1,
+                "customerId": 3,
                 "rate": 60,
-                "contractLength": 180
+                "contractLength": 180,
+                "hiringManager": "Billy Cheapskate"
             },
             {
                 "id": 2,
-                "employeeId": 3,
-                "customerId": 4,
-                "rate": 75,
-                "contractLength": 540
+                "employeeId": 2,
+                "customerId": 3,
+                "rate": 125,
+                "contractLength": 540,
+                "hiringManager": "Suzy Pennypincherly"
             },
             {
                 "id": 3,
-                "employeeId": 2,
-                "customerId": 5,
-                "rate": 110,
-                "contractLength": 195
+                "employeeId": 3, 
+                "customerId": 3,
+                "rate": 15,
+                "contractLength": 195,
+                "hiringManager": "Mike Moneybags"
             },
             {
                 "id": 4,
-                "employeeId": 5,
-                "customerId": 2,
+                "employeeId": 4,
+                "customerId": 3,
                 "rate": 250,
-                "contractLength": 80
+                "contractLength": 80,
+                "hiringManager": "Johnny Brownbaglunch"
             }
         ]
     }
